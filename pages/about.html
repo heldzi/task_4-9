@@ -31,16 +31,20 @@
             <h3>Ниже можете оставить заявку на обучение</h3>
             <form> 
                 <fieldset>
-                    <p>
-                        ФИО <input type="text" name="name" placeholder="Иванов Иван Иванович" required>
-                    Почта <input type="email" name="email" placeholder="empty@mail.ru" required>
-                        Телефон <strong>+7</strong> <input type="tel" name="phone" placeholder="9999999999" required>
-                    </p>
+                
+                    <Label for="name">ФИО</Label>
+                    <input type="text" name="name" id="name" placeholder="Иванов Иван Иванович" required>
+                    <label for="email">Почта</label>
+                    <input type="email" name="email" id="email" placeholder="empty@mail.ru" required>
+                    <label for="phone">Телефон <strong>+7</strong> </label>
+                    <input type="tel" name="phone" id="phone" placeholder="9999999999" required>
+                    
                     <h3>Способ связи</h3>
-                        <p>
-                        Телефон <input type="radio" name="call" value="by phone" checked>
-                        Email <input type="radio" name="call" value="by email">
-                        </p>
+                        <label for="byphone">Телефон</label>
+                        <input type="radio" name="call" id="byphone" value="by phone" checked>
+                        <label for="bymail">Почта</label>
+                        <input type="radio" name="call" id="bymail" value="by email">
+                    
                     <h3>Направление</h3>
                         <select required>
                             <option id="prof1" value="">Выберите специальность</option>
